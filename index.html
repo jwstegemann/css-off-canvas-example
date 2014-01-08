@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8" />
+		<title>Amanuensis</title>
+		<style type="text/css">
+
+      body {
+        margin: 0;
+        padding: 0;
+        overflow: scroll;
+      }
+      
+      div.container {
+        position: absolute;
+        height: 100%;
+        color: #fff;
+        font-size: 20px;
+        top: 0;
+        margin: 0;
+        padding: 0;
+      }
+
+      /* 
+       * Left-Side
+       */
+
+      div.container.left-container {
+        background-color: yellow;
+        width: 45%;
+        z-index: 2;
+        left: -45%;    
+      }
+
+      div.container.left-container.show-slots {
+        left: -30%;
+      }
+
+      div.container.left-container.show-stories {
+        left: 0;
+      }
+
+      
+      div.container.stories-left {
+        left: 0;
+        background-color: red;
+        width: 67%;
+        z-index: 4;
+      }
+      
+      div.container.slots-left {
+        left: 67%;
+        background-color: green;
+        width: 33%;
+        z-index: 3;
+      }
+      
+      /* 
+       * Right-Side
+       */
+       
+      div.container.right-container {
+        background-color: yellow;
+        width: 45%;
+        z-index: 2;
+        left: 100%;    
+      }
+
+      div.container.right-container.show-slots {
+        left: 85%;
+      }
+
+      div.container.right-container.show-stories {
+        left: 55%;
+      }
+
+      div.container.slots-right {
+        left: 0;
+        background-color: green;
+        width: 33%;
+        z-index: 3;
+      }
+
+      div.container.stories-right {
+        left: 33%;
+        background-color: red;
+        width: 67%;
+        z-index: 4;
+      }
+      
+
+      
+
+      /*
+       * Story
+       */ 
+      div.container.story {
+        background-color: blue;
+        width: 100%;
+        left: 0;
+        z-index: 0;
+      }
+
+      div.container.story.shifted-right {
+        left: 45%;
+      }
+
+      div.container.story.shifted-left {
+        left: 0;
+      }
+
+      div.story-padding {
+        padding-left: 15%;
+        padding-right: 15%;
+        height: 100%;
+      }
+
+      div.container.story.shifted-right > div.story-padding {
+        padding-left: 0%;
+        padding-right: 0%;
+      }
+
+      div.container.story.shifted-left > div.story-padding {
+        padding-left: 0%;
+        padding-right: 0%;
+      }      
+
+      div.container.story div.inner {
+        position: relative;
+        height: 100%; 
+        padding-left: 20px;
+        padding-right: 20px;
+        background-color: lightblue;
+      }
+
+      
+
+
+    </style>
+    <script src="jquery-1.8.3.min.js"></script>
+		<script src="amanuensis.js"></script>
+	</head>
+	<body>
+
+    <div id="left-container" class="container left-container">
+      <div id="stories-left" class="container stories-left">Stories inSlot</div>
+      <div id="slots-left" class="container slots-left">inSlots</div>
+    </div> -->
+        
+    <div id="story-container" class="container story"> 
+      <div class="story-padding">
+        <div class="inner">
+
+          Story<br>
+          <button id="show-left-slots">show inSlots</button>&nbsp;<button id="hide-left-slots">hide inSlots</button><br>
+          <button id="show-left-stories">show inStories</button>&nbsp;<button id="hide-left-stories">hide inStories</button><br>        
+
+          <button id="show-right-slots">show outSlots</button>&nbsp;<button id="hide-right-slots">hide outSlots</button><br>
+          <button id="show-right-stories">show outStories</button>&nbsp;<button id="hide-right-stories">hide outStories</button><br>        
+
+        </div>
+      </div>
+
+    </div>
+
+    <div id="right-container" class="container right-container">
+      <div id="stories-right" class="container stories-right">Stories outSlot</div>
+      <div id="slots-right" class="container slots-right">outSlots</div>
+    </div> -->
+
+
+
+	</body>
+</html>
